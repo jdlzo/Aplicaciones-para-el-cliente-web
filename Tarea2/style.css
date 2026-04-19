@@ -1,0 +1,85 @@
+body{
+    background-color:rgba(234, 170, 170, 0.119);
+    margin:0;
+    
+}
+
+main{
+    background-color: rgba(239, 195, 195, 0.416);
+    margin:40px auto ;
+    border-radius: 40px;
+    align-items: center;
+    padding:20px;
+    max-width: 800px;
+    
+}
+.datospersonales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.datospersonales img{
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius:20px ;
+}
+.datos{
+    padding: 10px;
+    margin:0;
+    margin-top:10px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+.datospersonales h3 {
+    line-height: 28px;
+    margin-left: 20px;
+    
+    
+}
+.datospersonales h3 span {
+    font-size: 16px;
+}
+.estudios{
+    margin-left: 30px;
+    margin-top:30px;
+}
+.estudios ul{
+    list-style: circle;
+    font-size: 18px;
+}
+
+.experiencia {
+    margin-left: 30px;
+    margin-top:30px;
+}
+.experiencia ul{
+    list-style: circle;
+    font-size: 18px;
+}
+.capacitaciones{
+    margin-left: 30px;
+    margin-top:30px;
+}
+.capacitaciones ul {
+    list-style: circle;
+    font-size: 18px;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+}
+table, td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+table th{
+    font-size: 18px;
+}
+.referencias h2{
+    margin-left: 30px;
+    margin-top:30px;
+    
+}
