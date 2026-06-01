@@ -1,343 +1,280 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Asistencia</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-  <title>Dashboard Empleados</title>
-
-  <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-  <div class="container">
+    <div class="contenedor">
 
+        <aside class="barra-lateral">
 
+            <div class="logo-empresa">
+                <div class="icono-logo">
+                    <i class="fa-solid fa-users"></i>
+                </div>
 
-    <div class="left">
-
-      <div class="top-icons">
-        <span>🔗</span>
-        <span>💬</span>
-        <span>⬇️</span>
-      </div>
-
-
-
-      <div class="calendar-card">
-
-        <p>Select date</p>
-
-        <div class="calendar-header">
-
-          <h1 id="selected-date"></h1>
-
-          <span>✏️</span>
-
-        </div>
-
-        <div class="month">
-
-          <button id="prev-month" class="month-btn">
-            ◀
-          </button>
-
-          <span id="month-year"></span>
-
-          <button id="next-month" class="month-btn">
-            ▶
-          </button>
-
-        </div>
-
-        <div class="days">
-
-          <span>D</span>
-          <span>L</span>
-          <span>M</span>
-          <span>M</span>
-          <span>J</span>
-          <span>V</span>
-          <span>S</span>
-
-        </div>
-
-        <div class="numbers" id="calendar-days"></div>
-
-      </div>
-
-    </div>
-
-
-
-    <div class="center">
-
-      <div class="search">
-
-        <span>☰</span>
-
-        <input type="text" placeholder="Buscar empleado"id="search-input">
-        <span>🔍</span>
-
-      </div>
-
-
-
-      <div class="employee-list" id="employee-list">
-
-
-        <div class="employee">
-
-          <div class="employee-left">
-
-            <div class="avatar">
-              A
+                <div>
+                    <h3>Talento Humano</h3>
+                    <span>Empresa S.A.</span>
+                </div>
             </div>
 
-            <span>Ariana</span>
+            <nav>
 
-          </div>
+                <a href="#" class="activo">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
 
-          <div class="employee-icons">
+                <p class="titulo-seccion">ASISTENCIA</p>
 
-            <span class="edit-btn">
-              ✏️
-            </span>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    Empleados
+                </a>
 
-            <span>
-              ❗
-            </span>
+                <a href="#">
+                    <i class="fa-solid fa-calendar"></i>
+                    Calendario
+                </a>
 
-          </div>
+                <a href="#">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Reportes
+                </a>
 
-        </div>
+                <a href="#">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Justificantes
+                </a>
 
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Configuración
+                </a>
 
-        <div class="employee">
+            </nav>
 
-          <div class="employee-left">
+        </aside>
 
-            <div class="avatar">
-              C
-            </div>
+        <main class="contenido-principal">
 
-            <span>Carlos</span>
+            <header class="encabezado">
 
-          </div>
+                <div>
+                    <h1>Control de Asistencia</h1>
+                    <span>Panel de Administrador</span>
+                </div>
 
-          <div class="employee-icons">
+                <div class="encabezado-derecha">
 
-            <span class="edit-btn">
-              ✏️
-            </span>
+                    <div class="caja-busqueda">
+                        <i class="fa-solid fa-magnifying-glass"></i>
 
-            <span>
-              ❗
-            </span>
+                        <input type="search"  id="buscar-empleado" placeholder="Buscar empleado">
+                    </div>
 
-          </div>
+                    <div class="administrador">
+                        Administrador
+                    </div>
 
-        </div>
+                </div>
 
+            </header>
 
+            <section class="panel-estadisticas">
 
-        <div class="employee">
+                <div class="tarjeta-estadistica">
+                    <h4>Asistencias Hoy</h4>
+                    <h2>128</h2>
+                    <p>82% del total</p>
+                </div>
 
-          <div class="employee-left">
+                <div class="tarjeta-estadistica">
+                    <h4>Faltas Hoy</h4>
+                    <h2>18</h2>
+                    <p>12% del total</p>
+                </div>
 
-            <div class="avatar">
-              D
-            </div>
+                <div class="tarjeta-estadistica">
+                    <h4>Atrasos Hoy</h4>
+                    <h2>9</h2>
+                    <p>6% del total</p>
+                </div>
 
-            <span>David</span>
+                <div class="tarjeta-estadistica">
+                    <h4>Empleados Activos</h4>
+                    <h2>155</h2>
+                    <p>Total empleados</p>
+                </div>
 
-          </div>
+                <div class="tarjeta-estadistica">
+                    <h4>Justificantes Pendientes</h4>
+                    <h2>5</h2>
+                    <p>Por revisar</p>
+                </div>
 
-          <div class="employee-icons">
+            </section>
 
-            <span class="edit-btn">
-              ✏️
-            </span>
+            <section class="seccion-central">
 
-            <span>
-              ❗
-            </span>
+                <div class="tarjeta-calendario">
 
-          </div>
+                    <h2>Calendario de Asistencia</h2>
+                    <div class="controles-calendario">
 
-        </div>
+                    <button id="mes-anterior">
+                        <
+                    </button>
 
-      </div>
+                    <div id="mes-actual"></div>
+
+                    <button id="mes-siguiente">
+                        >
+                    </button>
+
+                </div>
+
+                    <table>
+
+                        <tbody id="dias-calendario"></tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="tarjeta-actividad">
+
+                    <h2>Actividad Reciente</h2>
+
+                    <div class="elemento-actividad">
+                        <strong>Justificante aprobado</strong>
+                        <span>Hace 15 min</span>
+                    </div>
+
+                    <div class="elemento-actividad">
+                        <strong>Suspensión aplicada</strong>
+                        <span>Hace 1 hora</span>
+                    </div>
+
+                    <div class="elemento-actividad">
+                        <strong>Justificante pendiente</strong>
+                        <span>Hace 2 horas</span>
+                    </div>
+
+                    <div class="elemento-actividad">
+                        <strong>Registro modificado</strong>
+                        <span>Hace 3 horas</span>
+                    </div>
+
+                    <div class="elemento-actividad">
+                        <strong>Empleado registrado</strong>
+                        <span>Hace 4 horas</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="seccion-empleados">
+
+                <div class="encabezado-empleados">
+
+                    <h2>Resumen de Empleados</h2>
+
+                    <input type="search" id="buscar-empleado" placeholder="Buscar empleado...">
+
+                </div>
+
+                <table id="tabla-empleados">
+
+                    <thead>
+
+                        <tr>
+                            <th>Empleado</th>
+                            <th>Departamento</th>
+                            <th>Estado</th>
+                            <th>Entrada</th>
+                            <th>Salida</th>
+                            <th>Faltas</th>
+                            <th>Atrasos</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>María González</td>
+                            <td>Recursos Humanos</td>
+                            <td>Presente</td>
+                            <td>08:00 AM</td>
+                            <td>05:30 PM</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td>Carlos Ruiz</td>
+                            <td>Contabilidad</td>
+                            <td>Presente</td>
+                            <td>08:10 AM</td>
+                            <td>05:30 PM</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr>
+                            <td>Ana López</td>
+                            <td>Marketing</td>
+                            <td>Ausente</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td>Luis Martínez</td>
+                            <td>Sistemas</td>
+                            <td>Presente</td>
+                            <td>07:58 AM</td>
+                            <td>05:30 PM</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sofía Herrera</td>
+                            <td>Administración</td>
+                            <td>Presente</td>
+                            <td>08:05 AM</td>
+                            <td>05:30 PM</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
 
     </div>
-
-
-    <div class="right">
-
-      <div class="menu-container">
-
-        <button class="settings-btn" id="settings-btn">
-          ⚙
-        </button>
-
-        <div class="menu-card hidden" id="menu-card">
-
-          <div class="menu-item">
-
-            <span>Perfil</span>
-
-            <span>👤</span>
-
-          </div>
-
-          <div class="menu-item">
-
-            <span>Añadir empleado</span>
-
-            <span>➕</span>
-
-          </div>
-
-          <div class="menu-item">
-
-            <span>Ver registros</span>
-
-            <span>📁</span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="circle-chart"></div>
-
-    </div>
-
-  </div>
-
-
-  <div class="employee-modal hidden" id="employee-modal">
-
-    <div class="modal-content">
-
-
-      <div class="modal-header">
-
-        <div class="profile-section">
-
-          <div class="profile-image">
-            👤
-          </div>
-
-          <div>
-
-            <h2>Editar empleado</h2>
-
-            <p>ID: EMP-102</p>
-
-          </div>
-
-        </div>
-
-        <button class="close-btn" id="close-modal">
-          ✖
-        </button>
-
-      </div>
-
-      <!-- BODY -->
-
-      <div class="modal-body">
-
-        <!-- LEFT -->
-
-        <div class="modal-left">
-
-          <div class="input-group">
-
-            <label>Nombre</label>
-
-            <input type="text" value="Empleado1">
-
-          </div>
-
-          <div class="input-group">
-
-            <label>Estado</label>
-
-            <select>
-
-              <option>Activo</option>
-
-              <option>Inactivo</option>
-
-            </select>
-
-          </div>
-
-          <div class="input-group">
-
-            <label>Cédula</label>
-
-            <input type="text" value="1312456789">
-
-          </div>
-
-          <div class="input-group">
-
-            <label>Ocupación</label>
-
-            <input type="text" value="Diseñador">
-
-          </div>
-
-          <!-- SWITCH -->
-
-          <div class="switch-container">
-
-            <span>Desactivar usuario</span>
-
-            <label class="switch">
-
-              <input type="checkbox">
-
-              <span class="slider"></span>
-
-            </label>
-
-          </div>
-
-        </div>
-
-        <!-- RIGHT -->
-
-        <div class="modal-right">
-
-          <label>Observaciones</label>
-
-          <textarea placeholder="Escribe una observación..."></textarea>
-
-          <button class="save-btn">
-            Guardar cambios
-          </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <script src="script.js"></script>
-
+    <script src="script.js"></script>
+    <script src="calendario.js"></script>
 </body>
+
 </html>
